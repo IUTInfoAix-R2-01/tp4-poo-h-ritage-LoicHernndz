@@ -77,9 +77,9 @@ public class Velo {
 		velo1.setBraquet(DEFAUT_BRAQUET);
 		velo1.setDiamRoue(2);
 		
-		System.out.println("\n Braquet : " + velo1.getBraquet());
+		System.out.println("\nBraquet : " + velo1.getBraquet());
 		System.out.println("Diametre Roue : " + velo1.getDiamRoue());
-		System.out.println("Aléatoire : " + velo1.getGenAlea());
+		System.out.println("Aléatoire : " + velo1.getGenAlea().nextDouble());
 		System.out.println("Puissance : " + velo1.getPuissance(1000000));
 		
 	}
