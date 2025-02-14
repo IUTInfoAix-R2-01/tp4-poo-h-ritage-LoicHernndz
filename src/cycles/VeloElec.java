@@ -6,12 +6,12 @@ public class VeloElec extends Velo{
 	private double facteurPuissanceMoteur;
 	
 	public VeloElec(double braquet, double diamRoue, double coupleMoteur) {
-		super();
+		super(braquet, diamRoue);
 		facteurPuissanceMoteur = coupleMoteur; 
 	}
 	
 	public VeloElec(double braquet, double diamRoue) {
-		super();
+		super(braquet, diamRoue);
 		facteurPuissanceMoteur = DEFAUT_FACTEUR_PUISSANCE_MOTEUR;
 	}
 	
@@ -41,7 +41,7 @@ public class VeloElec extends Velo{
 	}
 	
 	public double getPuissance(double FrequenceCoupsDePedale) {
-		return FrequenceCoupsDePedale * facteurPuissanceMoteur;
+		return super.getPuissance(FrequenceCoupsDePedale) * facteurPuissanceMoteur;
 	}
 	
 	public static void main(String[] args) {
